@@ -1,0 +1,33 @@
+<!DOCTYPE web-app
+		PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+		"http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<servlet>
+		<servlet-name>EchoServlet</servlet-name>
+		<servlet-class>alekseybykov.portfolio.appletandservlet.servlet.EchoServlet</servlet-class>
+	</servlet>
+
+	<!-- Сервлет, обеспечивающий развертывание и скачивание приложений JWS. -->
+	<servlet>
+		<servlet-name>JnlpDownloadServlet</servlet-name>
+		<servlet-class>jnlp.sample.servlet.JnlpDownloadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EchoServlet</servlet-name>
+		<url-pattern>/echo</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>JnlpDownloadServlet</servlet-name>
+		<url-pattern>*.jar</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JnlpDownloadServlet</servlet-name>
+		<url-pattern>*.jnlp</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

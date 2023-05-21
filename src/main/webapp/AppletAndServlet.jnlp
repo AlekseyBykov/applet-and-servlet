@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="$$codebase">
+	<information>
+		<title>AppletAndServlet</title>
+		<vendor/>
+	</information>
+	<resources>
+		<j2se version="1.6+"/>
+		<jar href="AppletAndServlet.jar" main="true"/>
+
+		<jar href="lib/commons-io-2.11.0.jar" main="false" download="eager"/>
+		<jar href="lib/commons-collections-3.2.2.jar" main="false" download="eager"/>
+		<jar href="lib/commons-lang3-3.12.0.jar" main="false" download="eager"/>
+	</resources>
+	<application-desc/>
+	<update check="always"/>
+</jnlp>
